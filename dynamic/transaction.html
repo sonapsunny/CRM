@@ -1,0 +1,129 @@
+{% extends 'dashboard.html' %}
+
+{% block title %}teams{% endblock %}
+
+{% block content %}
+{% load static %}
+<br>
+<h1 style="text-align: center; color:white;">Transactions history</h1>
+<div style="margin: 30px;">
+    <table class="table table-hover table-bordered">
+
+        <thead class="table-primary">
+            <tr style="text-align: center; color:#16A085;">
+                <th>ID</th>
+                <th>BILL FOR</th>
+                <th>ISSUE DATE</th>
+                <th>DUE DATE</th>
+                <th>TOTAL</th>
+                <th>STATUS</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">456478</a></td>
+                <td><span>Platinum Subscription Plan</span></td>
+                <td><span>1 may 2021</span></td>
+                <td><span>26 may 2021</span></td>
+                <td><span>$700,00</span></td>
+                <td><span><span class="fw-bold text-warning">Due</span></span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold"  style="color: black; text-decoration: none;">456677</a></td>
+                <td><span>Gold Subscription Plan</span></td>
+                <td><span>23 may 2021</span></td>
+                <td><span>20 june 2021</span></td>
+                <td><span>$350,00</span></td>
+                <td><span class="fw-bold text-warning">Due</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">457832</a></td>
+                <td><span>Platinum Subscription Plan</span></td>
+                <td><span>12 may 2021</span></td>
+                <td><span>31 may 2021</span></td>
+                <td><span>$700,00</span></td>
+                <td><span class="fw-bold text-success">Paid</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">467381</a></td>
+                <td><span>Silver Subscription Plan</span></td>
+                <td><span>18 dec 2021</span></td>
+                <td><span>30 jan 2022</span></td>
+                <td><span>$100,00</span></td>
+                <td><span class="fw-bold text-danger">Cancelled</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">389256</a></td>
+                <td><span>Platinum Subscription Plan</span></td>
+                <td><span>23 apr 2022</span></td>
+                <td><span>26 may 2022</span></td>
+                <td><span>$650</span></td>
+                <td><span class="fw-bold text-success">Paid</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">467815</a></td>
+                <td><span>Silver Subscription Plan</span></td>
+                <td><span>5 aug 2022</span></td>
+                <td><span>6 sep 2022</span></td>
+                <td><span>$100,00</span></td>
+                <td><span class="fw-bold text-danger">Cancelled</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">267818</a></td>
+                <td><span>Silver Subscription Plan</span></td>
+                <td><span>9 oct 2022</span></td>
+                <td><span>10 nov 2022</span></td>
+                <td><span>$100,00</span></td>
+                <td><span class="fw-bold text-warning">Due</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">481682</a></td>
+                <td><span>Gold Subscription Plan</span></td>
+                <td><span>1 jan 2023</span></td>
+                <td><span>8 feb 2023</span></td>
+                <td><span>$350,00</span></td>
+                <td><span class="fw-bold text-success">Paid</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">4i8101</a></td>
+                <td><span>Platinum Subscription Plan</span></td>
+                <td><span>23 aug 2023</span></td>
+                <td><span>28 sep 2023</span></td>
+                <td><span>$350,00</span></td>
+                <td><span class="fw-bold text-warning">Due</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">678911</a></td>
+                <td><span>Platinum Subscription Plan</span></td>
+                <td><span>29 mar 2021</span></td>
+                <td><span>26 apr 2021</span></td>
+                <td><span>$650</span></td>
+                <td><span class="fw-bold text-danger">Cancelled</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+            <tr>
+                <td><a href="#" class="fw-bold" style="color: black; text-decoration: none;">416812</a></td>
+                <td><span>Silver Subscription Plan</span></td>
+                <td><span>6 jan 2022</span></td>
+                <td><span>7 feb 2022</span></td>
+                <td><span>$100,00</span></td>
+                <td><span class="fw-bold text-success">Paid</span></td>
+                <td><span><input type="text" name="" id="" placeholder="any remarks"></span></td>
+            </tr>
+        </tbody>
+        
+    </table><br><br>
+</div>
+{% endblock %}
+
+    

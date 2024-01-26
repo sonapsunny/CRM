@@ -1,0 +1,40 @@
+{% extends 'dashboard.html' %}
+
+{% block title %}Create Record{% endblock %}
+
+{% block content %}
+
+    <div class="card" style="margin-right: 300px;margin-left: 300px; margin-top: 50px; border-radius:10px; display: flex">
+
+        <strong style="margin-top: 30px; margin-left: 30px;">
+            {{record.first_name|upper}}
+            {{record.last_name|upper}}
+        </strong>
+        <hr>
+
+        <div class="card-body" style="margin-left: 30px;">
+            <p> <strong> ID: </strong>{{record.id}}</p> 
+            <p> <strong> Email: </strong>{{record.email}}</p> 
+            <p> <strong> Phone Number: </strong>{{record.phone}}</p> 
+            <p> <strong> Address: </strong>{{record.address}}</p> 
+            <p> <strong> City: </strong>{{record.city}}</p> 
+            <p> <strong> Province: </strong>{{record.province}}</p> 
+            <p> <strong> Country: </strong>{{record.country}}</p> 
+            <p> <strong> ZipCode: </strong>{{record.zipcode}}</p> 
+            <p> <strong> Created at: </strong>{{record.creation_date}}</p> 
+        </div>
+        <br>
+        
+    </div>
+    <div style="justify-content: center; margin-left: 500px; margin-top: 30px;">
+        <a href="{% url 'teams' %}" class="btn btn-secondary" style="letter-spacing: 1px;">Return</a>
+        &nbsp;
+
+        <a href="{% url 'update-record' record.id %}" class="btn btn-info" style="letter-spacing: 1px;">Update Record</a>
+        &nbsp;
+
+        <a href="{% url 'delete-record' record.id %}" class="btn btn-danger" style="letter-spacing: 1px;">Delete Record</a>
+        &nbsp;
+    </div>
+
+{% endblock %}

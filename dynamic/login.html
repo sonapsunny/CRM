@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
+
+<div class="signup">
+
+
+        <div class="wrapper">
+          <form action="" method="post">
+                {% csrf_token %}
+                <h1>Login</h1>
+                <p style="color: red;">{{error}}</p>
+                <div class="input-box">
+                    <input type="email" name="em" id="" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+               <div class="input-box">
+                    <input type="password" name="np" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+               </div>
+               <div class="remember-forget">
+                    <label ><input type="checkbox" name="" id="">Remember me</label>
+                    <a href="">Forgot Password</a>
+               </div>
+               <a href="{% url 'dashboard' %}"><button type="submit" class="btn">Login</button></a>
+
+               <div class="register-link">
+                    <p>Don't have an account? <a href="{% url 'signup' %}" style="color: #73C6B6;">Register</a></p>
+               </div>
+          </form>
+        </div>
+
+
+</div>
+
+{% endblock %}

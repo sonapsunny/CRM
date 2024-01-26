@@ -1,0 +1,61 @@
+{% extends 'dashboard.html' %}
+
+{% block title %}teams{% endblock %}
+
+{% block content %}
+
+
+<div class="main" style="margin: 30px;">
+    <button>
+        <a href="{% url 'create-record' %}" style="font-size: large; padding:0; text-decoration: none; color: #138D75;">
+
+            Create a new record
+            &nbsp;
+            <i class='bx bxs-plus-circle' style="font-size: x-large;"></i>
+
+        </a>
+    </button>
+    <hr>
+    <table class="table table-hover table-bordered">
+
+        <thead class="table-primary">
+
+            <tr>
+
+                <th scope="col">ID</th>
+                <th scope="col">Full Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Address</th>
+                <th scope="col">City</th>
+                <th scope="col">Province</th>
+                <th scope="col">Country</th>
+                <th scope="col">ZipCode</th>
+                <th scope="col">Created at</th>
+
+                <th scope="col">View</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for ls in data %}
+            <tr>
+                <td>{{ls.id}}</td>
+                <td>{{ls.first_name}} {{ls.last_name}}</td>
+                <td>{{ls.email}}</td>
+                <td>{{ls.phone}}</td>
+                <td>{{ls.address}}</td>
+                <td>{{ls.city}}</td>
+                <td>{{ls.province}}</td>
+                <td>{{ls.country}}</td>
+                <td>{{ls.zipcode}}</td>
+                <td>{{ls.creation_date}}</td>
+                <td><a href="{% url 'view-record' ls.id %}" style="text-decoration: none;">Click here <menu></menu></a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</div>
+{% endblock %}

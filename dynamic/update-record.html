@@ -1,0 +1,30 @@
+{% extends 'dashboard.html' %}
+
+{% block title %}Create Record{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<body>
+    <div class="conatiner bg-light shadow-md p-5 form-layout " style="margin-right: 300px;margin-left: 300px; margin-top: 50px; border-radius:10px;">
+
+        <h3>Update Record</h3>
+        <h6>Update your record down below</h6>
+        <hr>
+        <br>
+        <form action="" method="POST" autocomplete="off">
+            {% csrf_token %}
+            {{form|crispy}}
+            <br>
+            <button type="submit" style="border-radius: 5px; border: none; padding: 10px;background-color: #73C6B6; color: white;">
+                Update Record &nbsp; <i class='bx bx-check' style="font-size: x-large;"></i>
+            </button>
+        </form>
+    </div>
+
+</body>
+
+
+
+{% endblock %}

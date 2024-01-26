@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% load static %}
+<section class="banner-container">
+    <div class="container">
+        <div class="left-section">
+            <h1>Welcome to Nutshell</h1>
+            <p>A Powerful Sales CRM that helps you sell smarter and close deals faster.
+                Nutshell CRM is the true customer-centric tool for your sales needs. Track leads, get accurate forecasts, and focus on what matters: closing opportunities.</p><br>
+            <h2 style="color: white; font-size: 30px; letter-spacing: 1px;">Nutshell...Customer Relationship Management at it's finest !</h2>
+            <p style="letter-spacing: 1px;" >Keep track of your records effectively</p><br>
+            <button><a href="{% url 'login' %}" style="color: #138D75; text-decoration: none;" >Login to your Account &nbsp;<i class='bx bx-right-arrow-alt' style="font-size: larger;"></i></a></button>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

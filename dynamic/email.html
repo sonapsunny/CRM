@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block title %}Mail Us{% endblock %}
+
+{% block content %}
+{% load static %}
+<div style="justify-content: center; color: white; margin: 25px 200px;">
+    <form action="" method="post">
+        {% csrf_token %}
+        <h1>Leave Reply</h1>
+        <p class="success">{{success}}</p>
+        <label for="">User Email</label><br>
+        <input type="text" name="email" id=""><br>
+        <label for="">Subject</label><br>
+        <input type="text" name="subject" id=""><br>
+        <label for="">Comment</label><br>
+        <textarea name="message" id="" cols="50" rows="10"></textarea><br><br>
+        <input type="submit" value="Send" style="padding: 10px; background-color: white; color: #138D75; border: none; border-radius: 5px;">
+    </form>
+    
+</div>
+{% endblock %}
